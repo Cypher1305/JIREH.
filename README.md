@@ -51,9 +51,33 @@ Exemples :
 
 1. Cloner le repo sur `dev`
 ```bash
-git clone https://github.com/Cypher1305/.git
-cd votre-projet
-
+git clone https://github.com/Cypher1305/JIREH..git
+cd JIREH.
 ```
-2. 
-3. 
+2. Ajout du remote origin vers le dépôt officiel
+```bash
+git remote add origin https://github.com/Cypher1305/JIREH..git
+git remote -v # pour vérifier
+git fetch origin # pour récupérer les branches distantes
+```
+3. Créer une branche à partir de l’issue
+```bash
+git checkout -b Feature/BY/#12-ajout-formulaire-orientation
+```
+_Apporter votre contribustion sur votre branche_
+4. Commiter votre travaille
+```bash
+git add .
+git commit -m "#12 Ajout du formulaire d’orientation"
+```
+5. Pousser la branche
+```bash
+git push -u origin Feature/BY/#12-ajout-formulaire-orientation
+```
+_Proceder à une pull request_
+6. Supprimer localement la branche
+```bash
+git branch -d Feature/BY/#12-ajout-formulaire-orientation
+git push origin --delete Feature/BY/#12-ajout-formulaire-orientation
+```
+
