@@ -75,6 +75,7 @@ git commit -m "#12 Ajout du formulaire d’orientation"
 git push -u origin Feature/BY/#12-ajout-formulaire-orientation
 ```
 _Proceder à une pull request_
+
 6. Supprimer localement la branche
 ```bash
 git branch -d Feature/BY/#12-ajout-formulaire-orientation
